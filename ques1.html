@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 4 Question 1</title>
+    <link rel="stylesheet" href="lab4style.css">
+</head>
+<body>
+    <div id="myElement">
+        <p>Welcome to my website!</p>
+    </div>
+
+    <script>
+        var myElement = document.getElementById("myElement");
+
+        myElement.addEventListener("mouseover", function() {
+            myElement.querySelector("p").textContent = "Hello there!";
+        });
+
+        myElement.addEventListener("mouseout", function() {
+            myElement.querySelector("p").textContent = "Welcome to my website!";
+        });
+    </script>
+</body>
+</html>
